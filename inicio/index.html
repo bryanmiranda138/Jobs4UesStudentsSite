@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Jobs4UesStudents</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Kotlin_Icon.png/1200px-Kotlin_Icon.png" alt="Logo" class="logo-img">
+                </a>
+                Jobs4UesStudents
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="terminosycondiciones">Términos y Condiciones</a></li>
+                <li><a href="quienessomos">¿Quiénes Somos?</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Vista de Inicio -->
+        <section id="inicio" class="vista" style="display: block;">
+            <h1>¡¡¡ Bienvenido a Jobs4UesStudents App !!!</h1>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Kotlin_Icon.png/1200px-Kotlin_Icon.png" alt="Logo" class="logo-img">
+            <p>Acá encontrarás información sobre nuestra App creada para tí.</p>
+
+            <!-- Carrusel de Imágenes (solo en Inicio) -->
+            <section class="carrusel-container">
+                <div class="carrusel">
+                    <div class="slide active">
+                        <img src="https://via.placeholder.com/300x600/FF5733/FFFFFF?text=Imagen+1" alt="Imagen 1">
+                    </div>
+                    <div class="slide">
+                        <img src="https://via.placeholder.com/300x600/33FF57/FFFFFF?text=Imagen+2" alt="Imagen 2">
+                    </div>
+                    <div class="slide">
+                        <img src="https://via.placeholder.com/300x600/3357FF/FFFFFF?text=Imagen+3" alt="Imagen 3">
+                    </div>
+                    <div class="slide">
+                        <img src="https://via.placeholder.com/300x600/FF33A5/FFFFFF?text=Imagen+4" alt="Imagen 4">
+                    </div>
+                    <div class="slide">
+                        <img src="https://via.placeholder.com/300x600/FFC300/FFFFFF?text=Imagen+5" alt="Imagen 5">
+                    </div>
+                    <div class="slide">
+                        <img src="https://via.placeholder.com/300x600/DAF7A6/000000?text=Imagen+6" alt="Imagen 6">
+                    </div>
+                </div>
+                <a class="prev" onclick="moverCarrusel(-1)">&#10094;</a>
+                <a class="next" onclick="moverCarrusel(1)">&#10095;</a>
+            </section>
+
+            <hr>
+            <br>
+
+            <section>
+                <div class="card">
+                    <h2>Información sobre la App</h2>
+                    <p>Aquí encontrarás la información sobre nuestra app.</p>
+                    <button class="btn-card">Leer más</button>
+                </div>
+            </section>
+
+            <hr>
+            <br>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Jobs4UesStudents. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+
+        // Función para mover el carrusel
+        function moverCarrusel(n) {
+            const slides = document.querySelectorAll('.slide');
+            slideIndex += n;
+
+            if (slideIndex >= slides.length) {
+                slideIndex = 0;
+            }
+            if (slideIndex < 0) {
+                slideIndex = slides.length - 1;
+            }
+
+            slides.forEach((slide, index) => {
+                slide.style.display = (index === slideIndex) ? 'block' : 'none';
+            });
+        }
+
+        // Inicializa el carrusel mostrando la primera imagen
+        function iniciarCarrusel() {
+            const slides = document.querySelectorAll('.slide');
+            slides.forEach((slide, index) => {
+                slide.style.display = (index === slideIndex) ? 'block' : 'none';
+            });
+        }
+
+        iniciarCarrusel();
+    </script>
+</body>
+
+</html>
