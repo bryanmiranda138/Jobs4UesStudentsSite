@@ -12,13 +12,13 @@
     <header>
         <nav class="navbar">
             <div class="logo">
-                <a href="inicio">
+                <a href="inicio" id="logo-link">
                     <img src="LogoJobs4UesStudents.png" alt="Logo" class="logo-img">
                 </a>
                 Jobs4UesStudents
             </div>
             <ul class="nav-links">
-                <li><a href="inicio" class="active">Inicio</a></li>
+                <li><a href="inicio" id="inicio-link" class="active">Inicio</a></li>
                 <li><a href="terminosycondiciones">Términos y Condiciones</a></li>
                 <li><a href="quienessomos">¿Quiénes Somos?</a></li>
             </ul>
@@ -107,6 +107,13 @@
         }
 
         iniciarCarrusel();
+
+        // Previene la recarga de la página si ya estamos en la sección "Inicio"
+        document.getElementById("inicio-link").addEventListener("click", function(event) {
+            if (window.location.pathname.includes("inicio")) {
+                event.preventDefault();
+            }
+        });
     </script>
 </body>
 
