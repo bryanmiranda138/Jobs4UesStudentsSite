@@ -1,13 +1,61 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¿Quiénes Somos? - Jobs4UesStudents</title>
     <link rel="stylesheet" href="../styles.css">
 </head>
-
+<style>
+    /* Estilos para el formulario de contacto */
+    .contact-form {
+        max-width: 500px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+    }
+    .contact-form h2 {
+        color: #333;
+        margin-bottom: 15px;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .contact-form label {
+        display: block;
+        color: #555;
+        margin-bottom: 5px;
+        font-weight: 600;
+        text-align: left;
+    }
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 16px;
+        box-sizing: border-box;
+        resize: vertical;
+    }
+    .contact-form button[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+    }
+    .contact-form button[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+</style>
 <body>
     <header>
         <nav class="navbar">
@@ -26,22 +74,31 @@
     </header>
 
     <main>
-        <!-- Vista de ¿Quiénes Somos? -->
         <section id="contacto" class="vista" style="display: block;">
             <h1>¿Quiénes Somos?</h1>
             <div class="card2">
                 <div class="card-content2">
-                    <p>Somos un equipo comprometido de estudiantes de la UES, con la visión de conectar a nuestros
-                        compañeros con oportunidades de trabajo mientras están en la universidad. Nuestra app ofrece una
-                        plataforma para que estudiantes y empresas colaboren, fomentando el desarrollo profesional de
-                        jóvenes talentos.
-                    </p>
-                    <p>
-                        Con Jobs4UesStudents, queremos que cada estudiante tenga la oportunidad de encontrar un trabajo
-                        acorde a sus estudios y habilidades, facilitando la búsqueda de ofertas que se ajusten a su
-                        perfil académico.
-                    </p>
+                    <p>Somos un equipo comprometido de estudiantes de la UES, con la visión de conectar a nuestros compañeros con oportunidades de trabajo mientras están en la universidad. Nuestra app ofrece una plataforma para que estudiantes y empresas colaboren, fomentando el desarrollo profesional de jóvenes talentos.</p>
+                    <p>Con Jobs4UesStudents, queremos que cada estudiante tenga la oportunidad de encontrar un trabajo acorde a sus estudios y habilidades, facilitando la búsqueda de ofertas que se ajusten a su perfil académico.</p>
                 </div>
+            </div>
+            <br><br>
+
+            <!-- Formulario de contacto -->
+            <div class="contact-form">
+                <h2>¡ Contáctanos !</h2>
+                <form action="https://formspree.io/f/xovqddqv" method="POST">
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" required><br>
+
+                    <label for="correo">Correo electrónico:</label><br>
+                    <input type="email" id="correo" name="correo" required><br>
+
+                    <label for="mensaje">Mensaje:</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+
+                    <button type="submit">Enviar Mensaje</button><br>
+                </form>
             </div>
         </section>
     </main>
@@ -50,5 +107,4 @@
         <p>&copy; 2024 Jobs4UesStudents. Todos los derechos reservados.</p>
     </footer>
 </body>
-
 </html>
