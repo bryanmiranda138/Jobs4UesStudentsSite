@@ -109,24 +109,20 @@ main {
 /* Carrusel */
 .carrusel-container {
     position: relative;
-    width: 100%;
-    max-width: 900px;
-    height: 600px;
-    margin: 20px auto;
+    width: 600px;
+    height: 1300px;
     overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
 }
-
 .carrusel {
     display: flex;
-    transition: transform 0.5s ease-in-out;
-    height: 100%;
+    transition: transform 0.5s ease;
 }
 
-.slide {
-    min-width: 100%;
+.slide img {
+    width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .slide img {
@@ -170,7 +166,7 @@ main {
     padding: 20px;
     max-width: 700px;
     margin: 20px auto;
-    text-align: center;
+    text-align: justify;
     transition: transform 0.2s ease-in-out;
 }
 
@@ -290,44 +286,49 @@ footer {
         <section id="inicio" class="vista" style="display: block;">
             <h1>¡¡¡ Bienvenido a Jobs4UesStudents App !!!</h1>
             <img src="LogoJobs4UesStudents.png" alt="Logo" class="logo-img">
-            <p>Acá encontrarás información sobre nuestra App creada para tí.</p>
+            <p>Acá encontrarás información sobre nuestra App creada para tí.</p><br>
 
             <!-- Carrusel de Imágenes (solo en Inicio) -->
             <section class="carrusel-container">
                 <div class="carrusel">
                     <div class="slide active">
-                        <img src="https://via.placeholder.com/300x600/FF5733/FFFFFF?text=Imagen+1" alt="Imagen 1">
+                        <img src="image/imagen1.jpeg" alt="Imagen 1">
                     </div>
                     <div class="slide">
-                        <img src="https://via.placeholder.com/300x600/33FF57/FFFFFF?text=Imagen+2" alt="Imagen 2">
+                        <img src="image/imagen2.jpeg" alt="Imagen 2">
                     </div>
                     <div class="slide">
-                        <img src="https://via.placeholder.com/300x600/3357FF/FFFFFF?text=Imagen+3" alt="Imagen 3">
+                        <img src="image/imagen3.jpeg" alt="Imagen 3">
                     </div>
                     <div class="slide">
-                        <img src="https://via.placeholder.com/300x600/FF33A5/FFFFFF?text=Imagen+4" alt="Imagen 4">
+                        <img src="image/imagen4.jpeg" alt="Imagen 4">
                     </div>
                     <div class="slide">
-                        <img src="https://via.placeholder.com/300x600/FFC300/FFFFFF?text=Imagen+5" alt="Imagen 5">
+                        <img src="image/imagen5.jpeg" alt="Imagen 5">
                     </div>
                     <div class="slide">
-                        <img src="https://via.placeholder.com/300x600/DAF7A6/000000?text=Imagen+6" alt="Imagen 6">
+                        <img src="image/imagen6.jpeg" alt="Imagen 6">
                     </div>
                 </div>
                 <a class="prev" onclick="moverCarrusel(-1)">&#10094;</a>
                 <a class="next" onclick="moverCarrusel(1)">&#10095;</a>
             </section>
-
+            <br>
             <hr>
             <br>
 
             <section>
-                <div class="card">
-                    <h2>Información sobre la App</h2>
-                    <p>Aquí encontrarás la información sobre nuestra app.</p>
-                    <button class="btn-card">Leer más</button>
-                </div>
-            </section>
+                <section>
+                    <div class="card">
+                        <center><h2>Información sobre la App</h2></center>
+                        <p>Descarga Jobs4UesStudents, la aplicación diseñada especialmente para estudiantes universitarios que buscan empleo de forma rápida y sencilla, creada exclusivamente para estudiantes.</p><br>
+                        <p> Nuestra plataforma te conecta con oportunidades de trabajo, ya sea de medio tiempo o tiempo completo, adaptadas a tus necesidades y horarios. </p>
+                        <p>Con Jobs4UesStudents, podrás explorar una variedad de ofertas laborales publicadas por reclutadores en busca de talentos jóvenes, como tú, para cubrir diversos puestos en distintas áreas.</p>
+                        <p>Para los estudiantes, la app ofrece una interfaz intuitiva y fácil de usar, que te permite buscar empleos, filtrar por categorías, y aplicar a las ofertas que más te interesen con tan solo unos clics.</p>
+                        <p> Los reclutadores también encuentran en Jobs4UesStudents una herramienta eficiente para publicar sus vacantes y gestionar aplicaciones de candidatos interesados. Gracias a nuestras funcionalidades, los empleadores pueden identificar rápidamente el talento universitario ideal para sus vacantes, haciendo del proceso de selección algo ágil y efectivo.
+                            Descarga ahora Jobs4UesStudents y descubre cómo esta plataforma puede ayudarte a dar el siguiente paso en tu carrera, mientras aprovechas las mejores oportunidades de empleo</p>
+                    </div>
+                </section>
 
             <hr>
             <br>
