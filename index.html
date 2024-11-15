@@ -70,6 +70,13 @@
             border-radius: 50%;
         }
 
+        .logo-img2 {
+            width: 50px;
+            /* Ancho ajustado */
+            height: auto;
+            /* Mantiene la proporción */
+        }
+
         .nav-links {
             list-style: none;
             display: flex;
@@ -161,6 +168,33 @@
             border-radius: 50%;
             cursor: pointer;
             user-select: none;
+        }
+
+        .button-container {
+            text-align: center;
+        }
+
+        .download-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #dc143c;
+            border: none;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-button:hover {
+            background-color: #b11232;
+            transform: scale(1.05);
+        }
+
+        .download-button:active {
+            transform: scale(0.95);
         }
 
         .prev {
@@ -321,17 +355,38 @@
 
             <section>
                 <div class="card">
-                    <center><h2>Información sobre la App</h2></center>
-                    <p>Descarga Jobs4UesStudents, la aplicación diseñada especialmente para estudiantes universitarios que buscan empleo de forma rápida y sencilla, creada exclusivamente para estudiantes.</p><br>
-                    <p> Nuestra plataforma te conecta con oportunidades de trabajo, ya sea de medio tiempo o tiempo completo, adaptadas a tus necesidades y horarios. </p>
-                    <p>Con Jobs4UesStudents, podrás explorar una variedad de ofertas laborales publicadas por reclutadores en busca de talentos jóvenes, como tú, para cubrir diversos puestos en distintas áreas.</p>
-                    <p>Para los estudiantes, la app ofrece una interfaz intuitiva y fácil de usar, que te permite buscar empleos, filtrar por categorías, y aplicar a las ofertas que más te interesen con tan solo unos clics.</p>
-                    <p> Los reclutadores también encuentran en Jobs4UesStudents una herramienta eficiente para publicar sus vacantes y gestionar aplicaciones de candidatos interesados. Gracias a nuestras funcionalidades, los empleadores pueden identificar rápidamente el talento universitario ideal para sus vacantes, haciendo del proceso de selección algo ágil y efectivo.
-                        Descarga ahora Jobs4UesStudents y descubre cómo esta plataforma puede ayudarte a dar el siguiente paso en tu carrera, mientras aprovechas las mejores oportunidades de empleo</p>
+                    <center>
+                        <h2>Información sobre la App</h2>
+                    </center>
+                    <p>Descarga Jobs4UesStudents, la aplicación diseñada especialmente para estudiantes universitarios
+                        que buscan empleo de forma rápida y sencilla, creada exclusivamente para estudiantes.</p><br>
+                    <p> Nuestra plataforma te conecta con oportunidades de trabajo, ya sea de medio tiempo o tiempo
+                        completo, adaptadas a tus necesidades y horarios. </p>
+                    <p>Con Jobs4UesStudents, podrás explorar una variedad de ofertas laborales publicadas por
+                        reclutadores en busca de talentos jóvenes, como tú, para cubrir diversos puestos en distintas
+                        áreas.</p>
+                    <p>Para los estudiantes, la app ofrece una interfaz intuitiva y fácil de usar, que te permite buscar
+                        empleos, filtrar por categorías, y aplicar a las ofertas que más te interesen con tan solo unos
+                        clics.</p>
+                    <p> Los reclutadores también encuentran en Jobs4UesStudents una herramienta eficiente para publicar
+                        sus vacantes y gestionar aplicaciones de candidatos interesados. Gracias a nuestras
+                        funcionalidades, los empleadores pueden identificar rápidamente el talento universitario ideal
+                        para sus vacantes, haciendo del proceso de selección algo ágil y efectivo.
+                        Descarga ahora Jobs4UesStudents y descubre cómo esta plataforma puede ayudarte a dar el
+                        siguiente paso en tu carrera, mientras aprovechas las mejores oportunidades de empleo</p>
                 </div>
+                <br>
+                <br>
+                <h3>DESCARGA NUESTRA APP!!!</h3>
+                
+                <img src="image/LogoJobs4UesStudents.png" alt="Logo" class="logo-img2">
+                <div class="button-container">
+                    <a href="Jobs4UesStudents.apk" download class="download-button">Descargar APK</a>
+                </div>
+                <h6 style="color: #615d5d;">versión 3.0 , noviembre 2024</h6>
             </section>
 
-            <hr>
+
             <br>
         </section>
     </main>

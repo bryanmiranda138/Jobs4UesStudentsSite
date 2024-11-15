@@ -10,260 +10,297 @@
 <style>
     /* styles.css */
 
-/* Reset y estilos básicos */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    /* Reset y estilos básicos */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+    }
 
-/* Header y Navbar */
-header {
-    background-color: #dc143c;
-    color: #fff;
-    padding: 10px 0;
-}
+    /* Header y Navbar */
+    header {
+        background-color: #dc143c;
+        color: #fff;
+        padding: 10px 0;
+    }
 
-.navbar {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.logo-img {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-    border-radius: 50%;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.nav-links li {
-    margin-left: 20px;
-}
-
-.nav-links a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 15px;
-    transition: background-color 0.3s;
-}
-
-.nav-links a:hover {
-    background-color: #575757;
-    border-radius: 4px;
-}
-
-/* Pestaña activa con pleca "/" */
-.nav-links a.active::after {
-    content: " /";
-    color: #fff;
-    font-weight: bold;
-}
-
-.nav-links a.active {
-    background-color: #b50e33;
-    border-radius: 4px;
-}
-
-/* Main */
-main {
-    padding: 20px;
-    text-align: center;
-}
-
-.vista {
-    display: none;
-}
-
-.vista h1 {
-    font-size: 28px;
-    margin-bottom: 10px;
-}
-
-.vista p {
-    font-size: 18px;
-}
-
-/* Carrusel */
-.carrusel-container {
-    position: relative;
-    width: 600px;
-    height: 1300px;
-    overflow: hidden;
-    margin: 0 auto;
-}
-.carrusel {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-.slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.prev,
-.next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-    user-select: none;
-}
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
-}
-
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-/* Cards */
-.card {
-    background-color: #aa969a;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    max-width: 700px;
-    margin: 20px auto;
-    text-align: justify;
-    transition: transform 0.2s ease-in-out;
-}
-
-.card h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.card p {
-    font-size: 16px;
-    color: #ffffff;
-    margin-bottom: 20px;
-}
-
-.btn-card {
-    background-color: #464444;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.btn-card:hover {
-    background-color: #b50e33;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-}
-
-/* Footer */
-footer {
-    background-color: #dc143c;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    width: 100%;
-}
-
-/* Cards for "Quiénes Somos" y "Términos y Condiciones" */
-.card2, .card3 {
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 16px;
-    max-width: 900px;
-    margin: 20px auto;
-}
-
-.card-content2, .card-content3 {
-    font-family: Arial, sans-serif;
-    text-align: justify;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #333;
-}
-
-/* Media Queries para Responsividad */
-@media (max-width: 768px) {
-    .nav-links {
-        flex-direction: column;
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         align-items: center;
-        margin-top: 10px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .logo-img {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+        border-radius: 50%;
+    }
+
+    .logo-img2 {
+        width: 50px;
+        /* Ancho ajustado */
+        height: auto;
+        /* Mantiene la proporción */
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .nav-links li {
-        margin-left: 0;
-        margin-bottom: 10px;
+        margin-left: 20px;
     }
 
-    .carrusel-container {
-        max-width: 100%;
-        height: 300px;
+    .nav-links a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 15px;
+        transition: background-color 0.3s;
+    }
+
+    .nav-links a:hover {
+        background-color: #575757;
+        border-radius: 4px;
+    }
+
+    /* Pestaña activa con pleca "/" */
+    .nav-links a.active::after {
+        content: " /";
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .nav-links a.active {
+        background-color: #b50e33;
+        border-radius: 4px;
+    }
+
+    /* Main */
+    main {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .vista {
+        display: none;
     }
 
     .vista h1 {
-        font-size: 24px;
+        font-size: 28px;
+        margin-bottom: 10px;
     }
 
     .vista p {
+        font-size: 18px;
+    }
+
+    /* Carrusel */
+    .carrusel-container {
+        position: relative;
+        width: 600px;
+        height: 1300px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    .carrusel {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+
+    .slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .prev,
+    .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .button-container {
+        text-align: center;
+    }
+
+    .download-button {
+        display: inline-block;
+        padding: 15px 30px;
         font-size: 16px;
+        font-weight: bold;
+        color: #ffffff;
+        background-color: #dc143c;
+        border: none;
+        border-radius: 30px;
+        text-decoration: none;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .download-button:hover {
+        background-color: #b11232;
+        transform: scale(1.05);
+    }
+
+    .download-button:active {
+        transform: scale(0.95);
+    }
+
+    .prev {
+        left: 10px;
+    }
+
+    .next {
+        right: 10px;
+    }
+
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    /* Cards */
+    .card {
+        background-color: #aa969a;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        max-width: 700px;
+        margin: 20px auto;
+        text-align: justify;
+        transition: transform 0.2s ease-in-out;
     }
 
     .card h2 {
-        font-size: 20px;
+        font-size: 24px;
+        margin-bottom: 10px;
     }
 
     .card p {
-        font-size: 14px;
+        font-size: 16px;
+        color: #ffffff;
+        margin-bottom: 20px;
     }
-}
 
+    .btn-card {
+        background-color: #464444;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-card:hover {
+        background-color: #b50e33;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+    }
+
+    /* Footer */
+    footer {
+        background-color: #dc143c;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        position: relative;
+        width: 100%;
+    }
+
+    /* Cards for "Quiénes Somos" y "Términos y Condiciones" */
+    .card2,
+    .card3 {
+        background-color: #ffffff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 16px;
+        max-width: 900px;
+        margin: 20px auto;
+    }
+
+    .card-content2,
+    .card-content3 {
+        font-family: Arial, sans-serif;
+        text-align: justify;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #333;
+    }
+
+    /* Media Queries para Responsividad */
+    @media (max-width: 768px) {
+        .nav-links {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .nav-links li {
+            margin-left: 0;
+            margin-bottom: 10px;
+        }
+
+        .carrusel-container {
+            max-width: 100%;
+            height: 300px;
+        }
+
+        .vista h1 {
+            font-size: 24px;
+        }
+
+        .vista p {
+            font-size: 16px;
+        }
+
+        .card h2 {
+            font-size: 20px;
+        }
+
+        .card p {
+            font-size: 14px;
+        }
+    }
 </style>
+
 <body>
     <header>
         <nav class="navbar">
@@ -320,19 +357,41 @@ footer {
             <section>
                 <section>
                     <div class="card">
-                        <center><h2>Información sobre la App</h2></center>
-                        <p>Descarga Jobs4UesStudents, la aplicación diseñada especialmente para estudiantes universitarios que buscan empleo de forma rápida y sencilla, creada exclusivamente para estudiantes.</p><br>
-                        <p> Nuestra plataforma te conecta con oportunidades de trabajo, ya sea de medio tiempo o tiempo completo, adaptadas a tus necesidades y horarios. </p>
-                        <p>Con Jobs4UesStudents, podrás explorar una variedad de ofertas laborales publicadas por reclutadores en busca de talentos jóvenes, como tú, para cubrir diversos puestos en distintas áreas.</p>
-                        <p>Para los estudiantes, la app ofrece una interfaz intuitiva y fácil de usar, que te permite buscar empleos, filtrar por categorías, y aplicar a las ofertas que más te interesen con tan solo unos clics.</p>
-                        <p> Los reclutadores también encuentran en Jobs4UesStudents una herramienta eficiente para publicar sus vacantes y gestionar aplicaciones de candidatos interesados. Gracias a nuestras funcionalidades, los empleadores pueden identificar rápidamente el talento universitario ideal para sus vacantes, haciendo del proceso de selección algo ágil y efectivo.
-                            Descarga ahora Jobs4UesStudents y descubre cómo esta plataforma puede ayudarte a dar el siguiente paso en tu carrera, mientras aprovechas las mejores oportunidades de empleo</p>
+                        <center>
+                            <h2>Información sobre la App</h2>
+                        </center>
+                        <p>Descarga Jobs4UesStudents, la aplicación diseñada especialmente para estudiantes
+                            universitarios que buscan empleo de forma rápida y sencilla, creada exclusivamente para
+                            estudiantes.</p><br>
+                        <p> Nuestra plataforma te conecta con oportunidades de trabajo, ya sea de medio tiempo o tiempo
+                            completo, adaptadas a tus necesidades y horarios. </p>
+                        <p>Con Jobs4UesStudents, podrás explorar una variedad de ofertas laborales publicadas por
+                            reclutadores en busca de talentos jóvenes, como tú, para cubrir diversos puestos en
+                            distintas áreas.</p>
+                        <p>Para los estudiantes, la app ofrece una interfaz intuitiva y fácil de usar, que te permite
+                            buscar empleos, filtrar por categorías, y aplicar a las ofertas que más te interesen con tan
+                            solo unos clics.</p>
+                        <p> Los reclutadores también encuentran en Jobs4UesStudents una herramienta eficiente para
+                            publicar sus vacantes y gestionar aplicaciones de candidatos interesados. Gracias a nuestras
+                            funcionalidades, los empleadores pueden identificar rápidamente el talento universitario
+                            ideal para sus vacantes, haciendo del proceso de selección algo ágil y efectivo.
+                            Descarga ahora Jobs4UesStudents y descubre cómo esta plataforma puede ayudarte a dar el
+                            siguiente paso en tu carrera, mientras aprovechas las mejores oportunidades de empleo</p>
                     </div>
+                    <br>
+                    <br>
+                    <h3>DESCARGA NUESTRA APP!!!</h3>
+                    
+                    <img src="LogoJobs4UesStudents.png" alt="Logo" class="logo-img2">
+                    <div class="button-container">
+                        <a href="Jobs4UesStudents.apk" download class="download-button">Descargar APK</a>
+                    </div>
+                    <h6 style="color: #615d5d;">versión 3.0 , noviembre 2024</h6>
                 </section>
 
-            <hr>
-            <br>
-        </section>
+
+                <br>
+            </section>
     </main>
 
     <footer>
