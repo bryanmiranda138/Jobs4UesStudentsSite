@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¿Quiénes Somos? - Jobs4UesStudents</title>
+    <link rel="shortcut icon" type="image/png" href="image logo.png" />
     <link rel="stylesheet" href="../styles.css">
 </head>
 <style>
@@ -17,12 +19,14 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         text-align: center;
     }
+
     .contact-form h2 {
         color: #333;
         margin-bottom: 15px;
         font-size: 24px;
         font-weight: bold;
     }
+
     .contact-form label {
         display: block;
         color: #555;
@@ -30,6 +34,7 @@
         font-weight: 600;
         text-align: left;
     }
+
     .contact-form input[type="text"],
     .contact-form input[type="email"],
     .contact-form textarea {
@@ -42,6 +47,7 @@
         box-sizing: border-box;
         resize: vertical;
     }
+
     .contact-form button[type="submit"] {
         background-color: #007bff;
         color: #fff;
@@ -52,10 +58,21 @@
         font-size: 16px;
         transition: background-color 0.3s ease;
     }
+
     .contact-form button[type="submit"]:hover {
         background-color: #0056b3;
     }
+
+    .logo-img2 {
+        width: 10%;
+        /* Ajusta este valor para cambiar el tamaño */
+        height: auto;
+        /* Mantiene la proporción de la imagen */
+        max-width: none;
+        /* Asegura que no se limite el tamaño */
+    }
 </style>
+
 <body>
     <header>
         <nav class="navbar">
@@ -69,6 +86,7 @@
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="../terminosycondiciones">Términos y Condiciones</a></li>
                 <li><a href="#" class="active">¿Quiénes Somos?</a></li>
+
             </ul>
         </nav>
     </header>
@@ -76,17 +94,25 @@
     <main>
         <section id="contacto" class="vista" style="display: block;">
             <h1>¿Quiénes Somos?</h1>
+            <img src="quienessomos.jpg" alt="Logo" class="logo-img2">
             <div class="card2">
                 <div class="card-content2">
-                    <p>Somos un equipo comprometido de estudiantes de la UES, con la visión de conectar a nuestros compañeros con oportunidades de trabajo mientras están en la universidad. Nuestra app ofrece una plataforma para que estudiantes y empresas colaboren, fomentando el desarrollo profesional de jóvenes talentos.</p>
-                    <p>Con Jobs4UesStudents, queremos que cada estudiante tenga la oportunidad de encontrar un trabajo acorde a sus estudios y habilidades, facilitando la búsqueda de ofertas que se ajusten a su perfil académico.</p>
+                    <p>Somos un equipo comprometido de estudiantes de la UES, con la visión de conectar a nuestros
+                        compañeros con oportunidades de trabajo mientras están en la universidad. Nuestra app ofrece una
+                        plataforma para que estudiantes y empresas colaboren, fomentando el desarrollo profesional de
+                        jóvenes talentos.</p>
+                    <p>Con Jobs4UesStudents, queremos que cada estudiante tenga la oportunidad de encontrar un trabajo
+                        acorde a sus estudios y habilidades, facilitando la búsqueda de ofertas que se ajusten a su
+                        perfil académico.</p>
                 </div>
             </div>
             <br><br>
 
+
             <!-- Formulario de contacto -->
             <div class="contact-form">
-                <h2>¡ Contáctanos !</h2>
+                <h2>Si quieres reportar algún problema o unirte al programa de testers de nuestra app en Playstore </h2>
+                <h2>¡¡ Contáctanos !!</h2>
                 <form action="https://formspree.io/f/xovqddqv" method="POST">
                     <label for="nombre">Nombre:</label><br>
                     <input type="text" id="nombre" name="nombre" required><br>
@@ -97,7 +123,7 @@
                     <label for="mensaje">Mensaje:</label><br>
                     <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
 
-                    <button type="submit">Enviar Mensaje</button><br>
+                    <button type="submit" style="background-color: #b50e33;">Enviar Mensaje</button><br>
                 </form>
             </div>
         </section>
@@ -107,4 +133,5 @@
         <p>&copy; 2024 Jobs4UesStudents. Todos los derechos reservados.</p>
     </footer>
 </body>
+
 </html>
